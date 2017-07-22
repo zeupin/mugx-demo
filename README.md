@@ -1,8 +1,8 @@
-# maaa-menu
+# zeupin.mugx
 
 一个漂亮的jquery菜单插件，既可以轻松的完成类似淘宝、京东、小米等电商类的商品多目录分级样式，也可制作美观的MegaMenu样式菜单。
 
-官网: <https://github.com/zeupin/maaa-menu>
+官网: <https://github.com/zeupin/mugx>
 
 ## 功能特点
 
