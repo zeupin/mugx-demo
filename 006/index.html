@@ -5,20 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>mugx 003</title>
+  <title>mugx-006</title>
   <link rel="stylesheet" href="../mugx.css">
   <link rel="stylesheet" href="../common.css">
-  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="006.css">
 </head>
 
 <body>
-  <h1>data-pos="list.bottom"</h1>
+  <h1>data-pos="item.top"</h1>
+
+  <div class="height-200"></div>
 
   <div class="wrapper">
-    <div class="mugx" data-pos="list.bottom" data-classes="active">
+    <div class="mugx" data-pos="item.top" data-classes="active">
       <div class="mugx-item">
         <h6><a href="#">域名</a></h6>
-        <div class="mugx-sub">
+        <div class="mugx-sub" style="width:400px;">
           <div class="w-3-1">
             <h6>产品系列</h6>
             <p>品名</p>
@@ -48,30 +50,33 @@
       <div class="mugx-item">
         <h6><a href="#">虚拟主机</a></h6>
         <div class="mugx-sub">
-          <h6>你好3</h6>
+          <h6>你好4你好你好</h6>
         </div>
       </div>
       <div class="mugx-item">
         <h6><a href="#">网站建站</a></h6>
-        <div class="mugx-sub">
-          <h6>你好4</h6>
+        <div class="mugx-sub" style="width:400px;">
+          <h6>你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好</h6>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="height-200"></div>
-
-  <p class="wrapper">
-    用这个形式，即可以实现传统的 megamenu 菜单样式。
-  </p>
+  <div class="wrapper">
+    <p>注意事项:</p>
+    <ol>
+      <li>如果是参照物为item的模式, 比如为data-pos=item.top或data-pos=item.bottom, 强烈建议明确设定各个mugx-sub的width值</li>
+      <li>如果sub的宽度超出list的宽度, 则会强行将sub的宽度设置为100%</li>
+      <li>一般情况, sub会和item进行左对齐. 但是如果sub的右边超出list的右边, 则sub的右边界和list的右边界对齐. 参见看看演示中"网站建站"和其它菜单项的mugx-sub右边界的不同之处</li>
+    </ol>
+  </div>
 
   <div class="footer">
     版权所有 &copy; 2017 <a href="http://zeupin.com">上海宙品信息科技有限公司</a>
   </div>
 
   <script src="../jquery.min.js"></script>
-  <script src="../jquery.mugx.js"></script>
+  <script src="../mugx.js"></script>
   <script>
     $(".mugx").mugx();
   </script>

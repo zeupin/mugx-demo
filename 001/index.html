@@ -5,22 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>mugx 006</title>
+  <title>mugx-001</title>
   <link rel="stylesheet" href="../mugx.css">
   <link rel="stylesheet" href="../common.css">
-  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="001.css">
 </head>
 
 <body>
-  <h1>data-pos="item.top"</h1>
-
-  <div class="height-200"></div>
+  <h1>data-pos="list.right"</h1>
 
   <div class="wrapper">
-    <div class="mugx" data-pos="item.top" data-classes="active">
+    <div class="mugx verticle" data-pos="list.right" data-classes="active">
       <div class="mugx-item">
-        <h6><a href="#">域名</a></h6>
-        <div class="mugx-sub" style="width:400px;">
+        <h6>域名</h6>
+        <p>
+          <a href="#">.com</a> /
+          <a href="#">.cn</a> /
+          <a href="#">.net</a>
+        </p>
+        <div class="mugx-sub">
           <div class="w-3-1">
             <h6>产品系列</h6>
             <p>品名</p>
@@ -42,33 +45,39 @@
         </div>
       </div>
       <div class="mugx-item">
-        <h6><a href="#">企业邮箱</a></h6>
+        <h6>企业邮箱</h6>
+        <p>
+          <a href="#">经济型</a> /
+          <a href="#">外贸型</a> /
+          <a href="#">专业型</a>
+        </p>
         <div class="mugx-sub">
           <h6>你好2</h6>
         </div>
       </div>
       <div class="mugx-item">
-        <h6><a href="#">虚拟主机</a></h6>
+        <h6>虚拟主机</h6>
+        <p>
+          <a href="#">经济实惠</a> /
+          <a href="#">专业风范</a> /
+          <a href="#">性能强劲</a>
+        </p>
         <div class="mugx-sub">
-          <h6>你好4你好你好</h6>
+          <h6>你好3</h6>
         </div>
       </div>
       <div class="mugx-item">
-        <h6><a href="#">网站建站</a></h6>
-        <div class="mugx-sub" style="width:400px;">
-          <h6>你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好你好4你好你好</h6>
+        <h6>网站建站</h6>
+        <p>
+          <a href="#">企业官网</a> /
+          <a href="#">电子商务</a> /
+          <a href="#">产品推广</a>
+        </p>
+        <div class="mugx-sub">
+          <h6>你好4</h6>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="wrapper">
-    <p>注意事项:</p>
-    <ol>
-      <li>如果是参照物为item的模式, 比如为data-pos=item.top或data-pos=item.bottom, 强烈建议明确设定各个mugx-sub的width值</li>
-      <li>如果sub的宽度超出list的宽度, 则会强行将sub的宽度设置为100%</li>
-      <li>一般情况, sub会和item进行左对齐. 但是如果sub的右边超出list的右边, 则sub的右边界和list的右边界对齐. 参见看看演示中"网站建站"和其它菜单项的mugx-sub右边界的不同之处</li>
-    </ol>
   </div>
 
   <div class="footer">
@@ -76,7 +85,7 @@
   </div>
 
   <script src="../jquery.min.js"></script>
-  <script src="../jquery.mugx.js"></script>
+  <script src="../mugx.js"></script>
   <script>
     $(".mugx").mugx();
   </script>

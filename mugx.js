@@ -3,7 +3,7 @@
  * See https://github.com/zeupin/mugx
  *
  * Copyright (c) 2017 Zeupin LLC.
- * Author: Macc Liu (https://github.com/maccliu)
+ * Author: mugx-Liu (https://github.com/maccliu)
  *
  * Licensed under MIT.
  */
